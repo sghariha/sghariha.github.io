@@ -90,20 +90,14 @@
 	    				<div class="col-md-12 portfolio-content">
 		       				<img src="placeit.png" class="rounded app-ex float-center" alt="fitdata">
 		       				<hr>
-		       				<h3 class="text-center">FitData</h3>
-		       				<a class="about-item-l" href="https://fitdata2016.herokuapp.com" target="_blank">fitdata2016.herokuapp.com</a>
-		       				<p class="about-item">FitData is a cross-platform web application that allows the general public to contribute to health science research through surveys and data collection.</p>
-		       				<p class="about-item">I assisted with the front-end development as I created wireframes and prototypes based on user requirements. I helped enhance the user interface for the data visualization display using jQuery. Lastly, I conducted A/B user-testing using Google Analytics and JavaScript.</p><br><br>
+		       				<a class="btn btn-xl" href="fitdata.html">FitData</a>
 	       				</div>
 	    			</div>
 	    			<div class="col-md-6">
 	    				<div class="col-md-12 portfolio-content">
 		    				<img src="placeit2.png" class="rounded app-ex float-center" alt="traveltracker">
 		    				<hr>
-		    				<h3 class="text-center">Travel Tracker</h3>
-		    				<a class="about-item-l" href="https://cogs121-trip.herokuapp.com/" target="_blank">cogs121-trip.herokuapp.com</a>
-		    				<p class="about-item">Travel Tracker is a desktop web application that allows users to keep track of where they travel, visualize these results using maps and charts, and share these results through social media.</p>
-		       				<p class="about-item">I carried out the entire front-end development process as I used the Google Maps API with jQuery to create an interactive experience with the map. I also used D3.js to create user-friendly visualizations of the travel data. Lastly, I conducted testing sessions with my peers to determine areas of improvement in usability.</p><br><br>
+		    				<a class="btn btn-xl" href="traveltracker.html">Travel Tracker</a>
 	    				</div>
 	    			</div>
 	    		</div>
@@ -112,20 +106,14 @@
 	    				<div class="col-md-12 portfolio-content">
 		    				<img src="placeit4.png" class="rounded app-ex float-center" alt="yummit">
 		    				<hr>
-		    				<h3 class="text-center">Yummit</h3>
-		    				<a class="about-item-l" href="https://docs.google.com/document/d/e/2PACX-1vRzuMbHleIGu2tPhurwfs4qhulWlm0-ymythBURndii1QgqtWTRk19nnMhlsX7Z3pC-2r2wT-x-P9jq/pub" target="_blank">Sample screens</a>
-		    				<p class="about-item">Yummit is an Android mobile application that allows users to buy and sell homemade food within the community of other users. The sellers can post images and descriptions of the foods for sale and monitor sales whereas the buyers can monitor their placed orders.</p>
-		       				<p class="about-item">I assisted with the front-end development starting from user research all the way to implementation. The front-end was developed using XML for the markup and Java for the user interactions and for linking the client-side with the Firebase database. I used Android Studio to implement Yummit.</p><br><br>
+		    				<a class="btn btn-xl" href="yummit.html">Yummit</a>
 	    				</div>
 	    			</div>
 	    			<div class="col-md-6">
 	    				<div class="col-md-12 portfolio-content">
 		    				<img src="placeit3.png" class="rounded app-ex float-center" alt="watertracker">
 		    				<hr>
-		    				<h3 class="text-center">Water Tracker</h3>
-		    				<a class="about-item-l" href="https://docs.google.com/document/d/e/2PACX-1vQOVihHog3HgPr-2D5zWuwE_PPBUQNOM-mqLG5DYKqKFKD0ABO3ZxHD6SnwTkL7S_zI_hBhdWZ39SaC/pub" target="_blank">Design brief</a>
-		    				<p class="about-item">Water Tracker is a tablet-based prototype for a water usage monitoring system that allows college students to track their dorm's overall water usage and figure out where in their dorms to reduce water usage.</p>
-		       				<p class="about-item">I helped out with user research to figure out that water is overused in college dorms. Then, I assisted with the ideation process, which led to the water tracking system idea. After ideation, I worked on prototyping until the final prototype met the requirements defined in the user research phase.</p><br><br>
+		    				<a class="btn btn-xl" href="spotifyredesign.html">Music Playlist Redesign</a>
 	    				</div>
 	    			</div>
 	    		</div>
@@ -255,30 +243,7 @@
 	  				setTimeout("typewriter()", iSpeed);
 	 			}
 			}
-
-			function setEqualHeight(selector, triggerContinusly) {
-	    		var elements = $(selector)
-	    		elements.css("height", "auto")
-	    		var max = Number.NEGATIVE_INFINITY;
-
-	    		$.each(elements, function(index, item) {
-	        		if ($(item).height() > max) {
-	            		max = $(item).height()
-	        		}
-	    		})
-	    		$(selector).css("height", max + "px")
-	    		if (!!triggerContinusly) {
-	        		$(document).on("input", selector, function() {
-	            		setEqualHeight(selector, false)
-	        		})
-	       			$(window).resize(function() {
-	            		setEqualHeight(selector, false)
-	       			})
-	    		}
-			}
-
-			typewriter();
-	    	setEqualHeight(".portfolio-content", true) 
+	    	typewriter();
 		</script>
 	</body>
 </html>

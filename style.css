@@ -189,6 +189,11 @@ a:focus, a:hover {
   font-size: 2em;
 }
 
+.section-header-portfolio {
+  color: #ef6817;
+  font-size: 2em;
+}
+
 .btn {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
@@ -257,11 +262,21 @@ img::-moz-selection {
   margin: 0; 
 }
 
+.about-item-p {
+  text-align: left;
+  font-size: 1em;
+  padding-bottom: 10px; 
+}
+
 .about-item-l {
   text-align: center;
   font-size: 1em;
-  padding-bottom: 20px;
-  margin: 0; 
+  margin-bottom: 10px; 
+}
+
+.carousel-yummit {
+  width: 50%;
+  margin: 0 auto
 }
 
 ul {
@@ -294,6 +309,43 @@ ul {
 
 h3 {
   font-size: 1em
+}
+
+.navbar-brand-p {
+  font-weight: 700; 
+  font-size: 1em;
+  color: #ef6817
+}
+
+.carousel-control-next-icon {
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ef6817' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-prev-icon {
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ef6817' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-indicators > li {
+  background-color: #ef6817;
+}
+
+.carouselsection {
+  margin-bottom: 2em
+}
+
+.carousel-indicators > .active {
+  background-color: grey;
+}
+
+.d-block {
+  opacity:0.7;
+}
+
+.wireframe-header {
+  color: #ef6817;
+}
+
+.portfolio-content-section {
+  padding-top: 100px;
 }
 
 @media (max-width: 767px) {
@@ -361,7 +413,17 @@ h3 {
   }
 
   #mainNav .navbar-brand {
-    color: transparent; 
+    color: #ef6817; 
+  }
+
+  .portfolio-navbar-brand {
+    color: #ef6817; 
+    font-weight: 700; 
+    font-size: 1em
+  }
+
+  #mainNav.navbar-shrink .portfolio-navbar-brand {
+    color: #ef6817; 
   }
 
   #mainNav.navbar-shrink .navbar-brand {
@@ -381,5 +443,15 @@ h3 {
     background-color: #727271;
     border-radius: 12px;
     color: white; 
+  }
+
+  .nav-link-p {
+    color: black !important
+  }
+
+  .nav-link-p:hover {
+    background-color: #727271;
+    border-radius: 12px;
+    color: white !important; 
   }
 }
